@@ -7,6 +7,7 @@ A css set of classes to make responsive websites
 
 To add it to your project:
 
+npm install --save responsive-css
 add require('./<path to node module>/app.css');
 
 To test the example
@@ -18,10 +19,3 @@ npm start
 open http://localhost:3000
 ```
 
-### Linting
-
-This boilerplate project includes React-friendly ESLint configuration.
-
-```
-npm run lint
-```
