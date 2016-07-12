@@ -6,7 +6,7 @@ export default class App extends Component {
       <div>
         <div>
           <h1>Responsive</h1>
-          <h2>Columns System</h2>
+          <h2 className="four-hidden">Columns System</h2>
           <h3>Pure Columns</h3>
           <div>
             <div className="col-1" style={{backgroundColor: "gray"}}>col #1</div>

@@ -183,3 +183,20 @@ $align-content: (('start',flex-start),('end',flex-end),('center',center),('betwe
 		}		
 	}
 }
+
+@each $break in $breakpoints-columns{
+	$bname: nth($break, 1);
+	$bvalue_min: nth($break, 2);
+	$bvalue_max: nth($break, 3);
+	.#{$bname}-hidden {
+		@if $bvalue_max > 0 {
+			@include respond-to-min-max($bvalue_min,$bvalue_max){
+				display: none;
+			}
+		} @else {
+			@include respond-to-min($bvalue_min){
+				display: none;								
+    		}	
+		}     		
+	}		
+}
